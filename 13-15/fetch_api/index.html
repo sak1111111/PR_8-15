@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Практика</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📡 Fetch API Практическая работа</h1>
+        
+        <!-- GET запросы -->
+        <section class="section">
+            <h2>🔍 GET запросы</h2>
+            <button id="fetch-get">Простой GET</button>
+            <button id="fetch-json">JSON данные</button>
+            <button id="fetch-error">Ошибки</button>
+            <div id="get-output" class="output"></div>
+            <div id="get-data" class="output"></div>
+        </section>
+
+        <!-- CRUD операции -->
+        <section class="section">
+            <h2>🛠 CRUD операции</h2>
+            <button id="fetch-post">POST</button>
+            <button id="fetch-put">PUT</button>
+            <button id="fetch-patch">PATCH</button>
+            <button id="fetch-delete">DELETE</button>
+            <div id="crud-output" class="output"></div>
+        </section>
+
+        <!-- Заголовки и параметры -->
+        <section class="section">
+            <h2>📋 Заголовки и параметры</h2>
+            <button id="fetch-headers">Заголовки</button>
+            <button id="fetch-params">Параметры</button>
+            <button id="fetch-timeout">Таймаут</button>
+            <div id="headers-output" class="output"></div>
+        </section>
+
+        <!-- Обработка ответов -->
+        <section class="section">
+            <h2>📬 Обработка ответов</h2>
+            <button id="fetch-status">Статусы</button>
+            <button id="fetch-response-headers">Заголовки ответа</button>
+            <button id="fetch-blob">BLOB данные</button>
+            <div id="response-output" class="output"></div>
+            <div id="image-container"></div>
+        </section>
+
+        <!-- Обработка ошибок -->
+        <section class="section">
+            <h2>🚨 Обработка ошибок</h2>
+            <button id="fetch-network-error">Сетевые ошибки</button>
+            <button id="fetch-http-error">HTTP ошибки</button>
+            <button id="fetch-abort">Отмена запроса</button>
+            <div id="error-output" class="output"></div>
+        </section>
+
+        <!-- Параллельные запросы -->
+        <section class="section">
+            <h2>⚡ Параллельные запросы</h2>
+            <button id="fetch-promise-all">Promise.all</button>
+            <button id="fetch-promise-race">Promise.race</button>
+            <button id="fetch-sequential">Последовательные</button>
+            <div id="parallel-output" class="output"></div>
+        </section>
+
+        <!-- Реальные сценарии -->
+        <section class="section">
+            <h2>🎯 Реальные сценарии</h2>
+            <button id="fetch-user-posts">Пользователь + посты</button>
+            <button id="fetch-search">Поиск</button>
+            <button id="fetch-cache">Кэширование</button>
+            <div id="scenario-output" class="output"></div>
+        </section>
+    </div>
+
+    <script src="fetch-tasks.js"></script>
+    <script src="fetch-tests.js"></script>
+</body>
+</html>
